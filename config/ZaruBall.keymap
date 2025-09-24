@@ -134,11 +134,11 @@
             display-name = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&trans  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5            &trans  &trans  &trans  &trans            &kp F6   &kp F7  &kp F8  &kp F9     &kp F10       &kp HOME
-&trans  &none   &none           &kp UP_ARROW    &none            &none             &trans  &trans  &trans  &trans            &none    &none   &none   &kp F11    &kp F12       &kp PG_UP
-&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none     &trans  &trans  &trans  &trans    &none   &none    &none   &none   &kp KP_N3  &kp KP_MINUS  &kp PG_DN
-&trans  &none   &none           &none           &none            &none   &none     &trans  &trans  &trans  &trans    &none   &none    &none   &none   &none      &kp KP_PLUS   &kp END
-&trans  &none                   &trans          &trans           &trans  &trans                                      &trans  &kp DEL                                           &studio_unlock
+&trans  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5            &trans  &trans  &trans  &trans            &kp F6   &kp F7  &kp F8  &kp F9   &kp F10  &kp HOME
+&trans  &none   &none           &kp UP_ARROW    &none            &none             &trans  &trans  &trans  &trans            &none    &none   &none   &kp F11  &kp F12  &kp PG_UP
+&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none     &trans  &trans  &trans  &trans    &none   &none    &none   &none   &none    &none    &kp PG_DN
+&trans  &none   &none           &none           &none            &none   &none     &trans  &trans  &trans  &trans    &none   &none    &none   &none   &none    &none    &kp END
+&trans  &none                   &trans          &trans           &trans  &trans                                      &trans  &kp DEL                                    &studio_unlock
             >;
         };
 
