@@ -173,5 +173,3 @@
         extra2 { status = "reserved"; };
     };
 };
-
-CONFIG_PMW3610_CPI=800
