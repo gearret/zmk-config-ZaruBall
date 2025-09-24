@@ -54,12 +54,12 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MOTION
+        irq-gpios = <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MOTION
 
         /*   optional features   */
         // snipe-layers = <1 2>;
-        scroll-layers = <2 3>;
-        automouse-layer = <1>;
+        scroll-layers = <1 2>;
+        /* AML 無効化のため automouse-layer を削除 */
     };
 };
 
