@@ -112,7 +112,7 @@
             bindings = <
 &kp ESC    &kp N1      &kp N2  &kp N3    &kp N4        &kp N5                         &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                         &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0     &kp MINUS
 &kp TAB    &kp Q       &kp W   &kp E     &kp R         &kp T                          &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                       &kp Y         &kp U   &kp I      &kp O    &kp P      &kp EQUAL
-&kp CAPS   &kp A       &kp S   &kp D     &kp F         &kp G      &kp SEMICOLON       &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp COLON          &kp H         &kp J   &kp K      &kp L    &kp ENTER  &mo 1
+&kp CAPS   &kp A       &kp S   &kp D     &kp F         &kp G      &kp APOS            &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp SEMI           &kp H         &kp J   &kp K      &kp L    &kp ENTER  &mo 1
 &kp LSHFT  &kp Z       &kp X   &kp C     &kp V         &kp B      &kp LEFT_BRACKET    &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp RIGHT_BRACKET  &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH   &lt SCROLL BACKSLASH
 &kp LCTRL  &kp C_MUTE          &kp LWIN  &kp LEFT_ALT  &kp SPACE  &mo SCROLL                                                                  &mo 3              &kp BSPC                                             &kp DEL
             >;
@@ -122,11 +122,11 @@
             display-name = "Mouse";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&to_layer_0 ESC     &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                     &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9  &to_layer_0 N0  &to_layer_0 DELETE
-&to_layer_0 TAB     &to_layer_0 Q   &to_layer_0 W   &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                      &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I   &to_layer_0 O   &to_layer_0 P   &to_layer_0 EQUAL
-&to_layer_0 CAPS    &to_layer_0 A   &mkp RCLK       &mkp MCLK       &mkp LCLK       &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK       &none
-&to_layer_0 LSHIFT  &kp Z           &kp X           &kp C           &kp V           &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans          &mkp MB4        &mkp MB5        &none           &lt SCROLL BACKSLASH
-&kp LCTRL           &trans                          &trans          &trans          &trans          &trans                                               &trans           &kp BSPC                                                                        &kp DELETE
+&to_layer_0 ESC   &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                     &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9  &to_layer_0 N0  &to_layer_0 DELETE
+&to_layer_0 TAB   &to_layer_0 Q   &to_layer_0 W   &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                      &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I   &to_layer_0 O   &to_layer_0 P   &to_layer_0 EQUAL
+&to_layer_0 CAPS  &to_layer_0 A   &mkp RCLK       &mkp MCLK       &mkp LCLK       &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &msc SCRL_UP    &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK       &none
+&kp LSHIFT        &kp Z           &kp X           &kp C           &kp V           &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans          &mkp MB4        &mkp MB5        &none           &lt SCROLL BACKSLASH
+&kp LCTRL         &trans                          &kp LEFT_GUI    &kp LEFT_ALT    &kp SPACE       &none                                                &none            &kp BSPC                                                                        &kp DELETE
             >;
         };
 
@@ -144,13 +144,13 @@
 
         raise_layer {
             display-name = "Raise";
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp C_BACKLIGHT_TOGGLE C_BACKLIGHT_TOGGLE>;
             bindings = <
-&trans  &none  &none  &none      &none      &none                              &trans  &trans  &trans  &trans            &none    &none     &none     &none      &none  &none
-&trans  &none  &none  &none      &none      &none                              &trans  &trans  &trans  &trans            &none    &none     &none     &none      &none  &none
-&trans  &none  &none  &mkp RCLK  &mkp LCLK  &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &none   &none    &none     &kp UP    &none      &none  &none
-&trans  &none  &none  &mkp MB4   &mkp MB5   &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &none   &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&trans  &none         &trans     &trans     &trans          &trans                                               &trans  &kp DEL                                        &trans
+&trans  &none  &none  &none   &none   &none             &trans  &trans  &trans  &trans            &none    &none     &none     &none      &none  &none
+&trans  &none  &none  &none   &none   &none             &trans  &trans  &trans  &trans            &none    &none     &none     &none      &none  &none
+&trans  &none  &none  &none   &none   &none   &none     &trans  &trans  &trans  &trans    &none   &none    &none     &kp UP    &none      &none  &none
+&trans  &none  &none  &none   &none   &none   &none     &trans  &trans  &trans  &trans    &none   &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+&trans  &none         &trans  &trans  &trans  &trans                                      &trans  &kp DEL                                        &trans
             >;
         };
 
